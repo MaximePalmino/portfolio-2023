@@ -1,6 +1,16 @@
-import '../styles/globals.css'
+import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
+import { useEffect, useRef } from 'react';
+import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+    const containerRef = useRef(null)
+
+
+    return (
+
+                <Component {...pageProps} />
+
+
+    );
 }

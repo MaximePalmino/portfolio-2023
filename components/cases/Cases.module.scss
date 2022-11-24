@@ -1,0 +1,54 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 4em;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0em 10em 10em 10em;
+    margin-top: 10em;
+
+    .left {
+        grid-area: left;
+        align-self: center;
+
+    }
+
+    .middle {
+        grid-area: middle;
+    }
+
+    .middleBottom {
+        grid-area: middleBottom;
+    }
+
+    .right {
+        grid-area: right;
+    }
+
+    .rightBottom {
+        grid-area: rightBottom;
+    }
+
+
+
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "left middle right"
+    "left middleBottom rightBottom";
+    column-gap:1em;
+    row-gap:1em;
+    align-items: center;
+    justify-content: center;
+
+    div {
+        border-radius: 4%;
+        border: 1px dashed #FFFFE3;
+        // background-color: rgba(179, 138, 138, 0.313);
+        height: 100%;
+
+
+    }
+}

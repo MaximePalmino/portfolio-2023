@@ -1,0 +1,43 @@
+.container {
+    position: absolute;
+    top: 3em;
+    z-index: 1 !important;
+    width: 100vw;
+    // height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    font-size: 11px;
+    align-items: center;
+    font-weight: 600;
+
+    div {
+        display: flex;
+        align-items: center;
+
+
+
+        p {
+            margin: 10px;
+            width: 50px;
+            border-radius: 46px;
+            text-align: center;
+            border: 1px dashed #FFFFE3;
+            padding: .5em;
+            -webkit-transition: ease-out 0.4s;
+            -moz-transition: ease-out 0.4s;
+            transition: ease-out 0.4s;
+
+            &:hover {
+                background-color: white;
+                color: #10100E;
+                cursor: pointer;
+
+            }
+
+        }
+
+
+
+
+    }
+}
