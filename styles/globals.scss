@@ -5,14 +5,19 @@
 }
 
 body {
-  background-color: black;
-  color: #FFFFE3;
+  background-color: #FFFFE3;
+  // background: linear-gradient(to top, #010101, #e01b16, #ffcb28);
+
+  color: #10100E;
   max-width: 1512px;
   overflow-x: hidden;
 }
 
 h1 {
+  font-size: 86px;
   font-family: Cabinet Grotesk;
+  line-height: 86.5%;
+
 }
 
 h2 {
@@ -35,75 +40,71 @@ hr {
 
 }
 
-button:hover {}
 
 .bg {
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  right: -50%;
-  bottom: -50%;
-  width: 200%;
-  height: 200vh;
-  background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+  background-image: url(../assets/noise/noise.png);
   background-repeat: repeat;
-  animation: bg-animation .2s infinite;
-  opacity: .4;
-  visibility: visible;
-  z-index: -1;
-
+  position: fixed;
+  z-index: 50;
+  width: 400%;
+  height: 300%;
+  left: -100%;
+  top: -100%;
+  pointer-events: none;
+  will-change: transform;
+  animation: 10s steps(10) 0s infinite normal none running noise_grain__3Y1xm;
 
 }
 
-@keyframes bg-animation {
-  0% {
-    transform: translate(0, 0)
-  }
-
+@keyframes noise_grain__3Y1xm {
   10% {
-    transform: translate(-5%, -5%)
+    transform: translate(20%, -15%);
   }
 
   20% {
-    transform: translate(-10%, 5%)
+    transform: translate(20%, -5%);
   }
 
   30% {
-    transform: translate(5%, -10%)
+    transform: translate(-20%, -5%);
   }
 
   40% {
-    transform: translate(-5%, 15%)
+    transform: translate(20%, 5%);
   }
 
   50% {
-    transform: translate(-10%, 5%)
+    transform: translate(-20%, 5%);
   }
 
   60% {
-    transform: translate(15%, 0)
+    transform: translate(20%, 15%);
   }
 
   70% {
-    transform: translate(0, 10%)
+    transform: translate(-20%, 15%);
   }
 
   80% {
-    transform: translate(-15%, 0)
+    transform: translate(20%, 5%);
   }
 
   90% {
-    transform: translate(10%, 5%)
+    transform: translate(-20%, 5%);
   }
 
   100% {
-    transform: translate(5%, 0)
+    transform: translate(20%, -15%);
   }
 }
 
-
 html.has-scroll-smooth {
   overflow: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 html.has-scroll-dragging {
@@ -119,6 +120,8 @@ html.has-scroll-dragging {
 
 .has-scroll-smooth [data-scroll-container] {
   min-height: 100vh;
+
+
 }
 
 [data-scroll-direction="horizontal"] [data-scroll-container] {

@@ -1,38 +1,38 @@
 import styles from './Header.module.scss'
-import { useRef, useCallback, useState } from 'react'
-// import { LUTCubeLoader } from 'postprocessing'
+import { useRef } from 'react'
 import { Rainbow } from '../Rainbow.js'
-import { Canvas, useFrame } from '@react-three/fiber'
-import { Bloom, EffectComposer, LUT } from '@react-three/postprocessing'
-import Nav from '../navigation/Nav'
-import { calculateRefractionAngle, lerp, lerpV3 } from '../../utils'
-
+import { Canvas } from '@react-three/fiber'
+import { EffectComposer, Bloom } from '@react-three/postprocessing'
 
 const Header: React.FC<any> = () => {
+
+
+    // 
 
     return (
 
         <div className={styles.container}>
-            <div data-scroll data-scroll-speed="2" className={styles.displacement}>
+            <div className={styles.displacement}>
                 <div className={styles.name}>
-                    <h1>Maxime</h1>
-                    <h1>Palmino</h1>
+                    <p>Welcome to my digital portfolio!</p>
+                    <h1><span>👋</span> Maxime Palmino</h1>
                 </div>
+
                 <div className={styles.canvas}>
-                    <Canvas orthographic gl={{ antialias: false }} style={{ width: 450, height: 450, borderRadius: '50%', filter: 'blur(1.5px)', marginTop: '2em' }}>
-                        <color attach="background" args={['black']} />
+                    {/* <Canvas orthographic gl={{ antialias: false }} style={{ width: 450, height: 450, borderRadius: '50%', filter: 'blur(1.2px)', marginTop: '2em' }}>
+                        <color attach="background" args={['#060606']} />
                         <Scene />
                         <EffectComposer disableNormalPass>
                             <Bloom mipmapBlur levels={10} intensity={1.5} luminanceThreshold={2} luminanceSmoothing={1} />
                         </EffectComposer>
                     </Canvas>
                     <Canvas orthographic gl={{ antialias: false }} style={{ position: 'absolute', width: 450, height: 450, borderRadius: '50%', filter: 'blur(20px)', marginTop: '2em', top: 0, zIndex: -1 }}>
-                        <color attach="background" args={['black']} />
+                        <color attach="background" args={['#060606']} />
                         <Scene />
                         <EffectComposer disableNormalPass>
                             <Bloom mipmapBlur levels={0} intensity={0.5} luminanceThreshold={1} luminanceSmoothing={1} />
                         </EffectComposer>
-                    </Canvas>
+                    </Canvas> */}
                 </div>
             </div>
             {/* <Canvas orthographic gl={{ antialias: true }} camera={{ position: [0, 0, 100], zoom: 70 }} style={{ width: 300, height: 300, borderRadius: '50%', position: 'absolute', transform: 'rotate(180deg)', boxShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px", opacity: '.8' }}>
@@ -44,7 +44,7 @@ const Header: React.FC<any> = () => {
             </Canvas> */}
             <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1100">
                 <g fill="none"
-                    stroke="#FFFFE3" strokeWidth="2" strokeDasharray="4" opacity="0.4">
+                    stroke="#10100E" strokeWidth="2" strokeDasharray="4" opacity="0.4">
                     <circle cx="565" cy="565" r="300" stroke="none" />
                     <circle cx="565" cy="565" r="300" />
                     <animateTransform attributeName="transform"

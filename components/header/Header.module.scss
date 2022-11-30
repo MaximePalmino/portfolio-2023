@@ -5,42 +5,50 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content: center;
     line-height: 100px;
 
-    .displacement {
-        position: relative;
-        // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
+    // .displacement {
+    //     position: relative;
+    //     // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    // }
 
 
     .name {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        overflow: hidden;
         display: flex;
         flex-direction: column;
         align-items: center;
-        z-index: 2;
 
-        h1 {
-
-            font-size: 40px;
-            font-weight: 400;
-            line-height: 50px;
+        p {
+            font-size: 1em;
+            font-family: Cabinet Grotesk;
+            letter-spacing: 1px;
         }
 
-        h1:nth-last-child(1) {
-            font-size: 64px;
+        h1 {
+            font-size: 86px;
+            z-index: 9999 !important;
+            // font-size: 86px;
+            font-weight: 400;
+            line-height: 30px;
             font-weight: 900;
+            transition: .3s all ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                padding: 40px;
+
+                // background: rgb(35, 131, 226);
+                background: linear-gradient(to top, #10100e00, #e0191600, #ffcb28);
+                color: black;
+                border-radius: 3px;
+            }
         }
     }
 
     svg {
         position: absolute;
         transform: skew(-60deg, 10deg);
+        z-index: -1;
         // transform: skew(-60deg, 90deg);
         /* Equal to skewX(10deg) */
     }

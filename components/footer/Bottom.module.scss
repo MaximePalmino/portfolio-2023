@@ -1,0 +1,24 @@
+.container {
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-bottom: .4px solid #FFFFE3;
+    background-color: #10100E;
+    color: #FFFFE3;
+
+    .places {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        border-right: .4px solid #FFFFE3;
+
+    }
+
+}

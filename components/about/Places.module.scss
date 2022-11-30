@@ -5,9 +5,10 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-
+    border-bottom: .4px solid #FFFFE3;
+    border-top: .4px solid #FFFFE3;
+    background-color: #10100E;
+    color: #FFFFE3;
 
     .places {
         display: flex;
@@ -16,8 +17,7 @@
         align-content: center;
         width: 50%;
         height: 100%;
-        border-right: 1px solid black;
-
+        border-right: .4px solid #FFFFE3;
 
 
     }
@@ -43,17 +43,17 @@
             padding-left: 2em;
 
             &:hover {
-                background-color: #10100E;
-                color: #FFFFE3;
+                background-color: #FFFFE3;
+                color: #10100E;
                 cursor: pointer;
+
             }
         }
 
 
 
         div:not(:last-child) {
-            border-bottom: 1px solid black;
-
+            border-bottom: .4px solid #FFFFE3
         }
 
     }
