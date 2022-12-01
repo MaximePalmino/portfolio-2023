@@ -1,12 +1,12 @@
 .container {
     width: 100vw;
-    height: 40vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: .4px solid #10100E;
+    border-bottom: .4px solid #10100E;
 
 
     .places {
@@ -16,10 +16,7 @@
         align-content: center;
         width: 50%;
         height: 100%;
-        border-right: 1px solid black;
-
-
-
+        border-right: .4px solid #10100E;
     }
 
     .container_places {
@@ -49,13 +46,39 @@
             }
         }
 
-
-
         div:not(:last-child) {
-            border-bottom: 1px solid black;
+            border-bottom: .4px solid #10100E;
 
         }
 
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 190vh;
+
+        .places {
+            width: 100%;
+            border-bottom: .4px solid #10100E;
+
+        }
+
+        .container_places {
+            width: 100%;
+
+            div {
+
+                width: 100%;
+                padding: 5em;
+                height: 100%;
+
+            }
+        }
     }
 
 }

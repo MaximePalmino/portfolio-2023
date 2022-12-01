@@ -11,15 +11,26 @@
 
     .places {
         width: 100%;
-
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         align-content: center;
+
+    }
+
+    .places:not(:last-child) {
         border-right: .4px solid #FFFFE3;
 
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        display: none;
     }
 
 }

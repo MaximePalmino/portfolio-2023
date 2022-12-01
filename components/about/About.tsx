@@ -6,7 +6,7 @@ const About: React.FC<any> = () => {
     return (
         <>
             <div className={styles.container}>
-                <h1>😣 What can we do about it ?😣</h1>
+                <h1>Looking for an apprenticship in Paris or London 😣</h1>
             </div>
         </>
     )

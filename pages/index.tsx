@@ -17,8 +17,9 @@ const Home = () => {
             <div className="bg">        </div>
             <Nav />
             <Header />
+            <Tools />
+
             <Cases />
-            {/* <Tools /> */}
             <About />
             <Places />
             <Footer />
