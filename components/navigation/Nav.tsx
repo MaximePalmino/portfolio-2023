@@ -1,14 +1,14 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import styles from './Nav.module.scss'
+import useScrollDirection from '../../hooks/ScrollDirection'
 
 const Nav = () => {
+    const scrollDirection = useScrollDirection();
 
     return (
-        <div className={styles.container}>
-
+        <div className={`${styles.container} ${scrollDirection === "down" ? `${styles.hide}` : "show"}`}>
             <div>
-
-                <p>デベロッパー 😁</p>
+                <p>デベ 😁</p>
             </div>
             <div>
                 <p>Cases</p>
@@ -17,7 +17,6 @@ const Nav = () => {
             </div>
             <div>
                 <p>About</p>
-
             </div>
         </div>
     )

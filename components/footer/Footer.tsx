@@ -14,7 +14,7 @@ const Footer: React.FC<any> = () => {
                     <h1>Lab</h1>
                 </div>
                 <div className={styles.places}>
-                    <h1>Blog</h1>
+                    <h1>Dev.to</h1>
                 </div>
             </div>
             <Bottom />

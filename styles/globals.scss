@@ -1,17 +1,31 @@
-* {
-  padding: 0;
+*,
+*:before,
+*:after {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #FFFFE3;
-  // background: linear-gradient(to top, #010101, #e01b16, #ffcb28);
-
-  color: #10100E;
-  max-width: 1512px;
   overflow-x: hidden;
+  overscroll-behavior-y: none;
+  background-color: #10100E;
+  color: #10100E;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+.scroll-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  will-change: transform;
+}
+
+
 
 h1 {
   font-size: 86px;
@@ -107,12 +121,6 @@ html.has-scroll-smooth {
   bottom: 0;
 }
 
-html.has-scroll-dragging {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 
 .has-scroll-smooth body {
   overflow: hidden;

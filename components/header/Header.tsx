@@ -45,8 +45,7 @@ const Header: React.FC<any> = () => {
             <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1100">
                 <g fill="none"
                     stroke="#10100E" strokeWidth="2" strokeDasharray="4" opacity="0.4">
-                    <circle cx="565" cy="565" r="300" stroke="none" />
-                    <circle cx="565" cy="565" r="300" />
+                    <circle cx="565" cy="565" r="300" id='myPath' />
                     <animateTransform attributeName="transform"
                         type="rotate"
                         from="360 565 565"
