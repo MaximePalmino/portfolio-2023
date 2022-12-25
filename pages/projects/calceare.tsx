@@ -1,10 +1,10 @@
-
+import styles from '../../styles/Calceare.module.scss';
 
 const Calceare = () => {
 
     return (
-        <div>
-            <h1>Hi from Calceare</h1>
+        <div className={styles.container}>
+            <h1>Calceare.</h1>
         </div>
     )
 }
