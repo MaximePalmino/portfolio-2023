@@ -10,7 +10,7 @@
     color: white;
 
     .places {
-        background-color: #10100E;
+        background-color: #000000;
         z-index: 2;
         width: 50%;
         height: 100%;
@@ -19,7 +19,6 @@
         justify-content: center;
         align-items: center;
         align-content: center;
-        border-radius: 15px;
         &:hover {
             background-color: rgba(16, 16, 14, 0);
             color: #10100E;

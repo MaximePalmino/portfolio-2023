@@ -5,27 +5,26 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    border-top: .4px solid #10100E;
-    border-bottom: .4px solid #10100E;
+    border-top: .4px solid #ffffff;
+    border-bottom: .4px solid #f8f8f8;
 
 
 
     .places {
         z-index: 1;
-        background: white;
-        border-radius: 15px;
+        background: black;
+        color: white;
         display: flex;
         justify-content: center;
         align-items: center;
         align-content: center;
         width: 50%;
         height: 100%;
-        border-right: .4px solid #10100E;
+        border-right: .4px solid #ffffff;
 
         img {
             z-index: 1;
             width: 100% !important;
-            border-radius: 15px;
             height: 100%;
             object-fit: cover;
             transition: .4s all ease-in-out;
@@ -45,8 +44,8 @@
 
         a {
             text-decoration: none;
-            background-color: white;
-            color: #10100E;
+            background-color: #000000;
+            color: #ffffff;
             height: 33.33333%;
             padding: 1em;
             display: flex;
@@ -56,21 +55,20 @@
             align-content: center;
             width: 100%;
             padding-left: 2em;
-            border-radius: 15px;
 
 
 
 
             &:hover {
-                background-color: #10100E;
-                color: #FFFFE3;
+                background-color: #ffffff;
+                color: #000000;
                 cursor: pointer;
 
             }
         }
 
         a:not(:last-child) {
-            border-bottom: .4px solid #10100E;
+            border-bottom: .4px solid #fdfdfd;
 
         }
 

@@ -22,7 +22,7 @@ const Cases: React.FC<any> = () => {
 
         },
         {
-            name: 'Usermind',
+            name: 'Tinder Clone',
             type: 'fullstack',
             url: usermind.src,
 
@@ -40,8 +40,8 @@ const Cases: React.FC<any> = () => {
 
         },
         {
-            name: 'Calceare',
-            type: 'fullstack',
+            name: 'Amoseeds',
+            type: 'Branding',
             url: 'https://images.unsplash.com/photo-1669980536057-0276d4055e61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
 
         },

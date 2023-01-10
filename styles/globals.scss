@@ -9,7 +9,7 @@
 body {
   overflow-x: hidden;
   overscroll-behavior-y: none;
-  background-color: #10100E;
+  background-color: #000000;
   color: #10100E;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -39,7 +39,7 @@ h2 {
   font-size: 25px;
   font-weight: 400;
   letter-spacing: 0.04em;
-
+z-index: 9999;
 }
 
 p {

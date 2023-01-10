@@ -8,7 +8,7 @@ const Nav = () => {
     return (
         <div className={`${styles.container} ${scrollDirection === "down" ? `${styles.hide}` : "show"}`}>
             <div>
-                <p>デベ 😁</p>
+                <p>👋 Hey</p>
             </div>
             <div>
                 <p>Cases</p>

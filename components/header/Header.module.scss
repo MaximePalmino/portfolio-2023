@@ -6,7 +6,9 @@
     justify-content: center;
     align-items: center;
     line-height: 100px;
-    background-image: linear-gradient(0deg, #FFFFFF 0%, #ba58ff 100%);
+    // background-image: linear-gradient(0deg, #FFFFFF 0%, #cdd7ff 100%);
+    background: #000000;
+    color: white;
     border-radius: 40px 40px 15px 15px;
     .name {
         width: 100%;
@@ -15,12 +17,15 @@
         align-items: center;
 
         p {
+            color: white;
+            z-index: 9998;
             font-size: 1em;
             font-family: Cabinet Grotesk;
             letter-spacing: 1px;
         }
 
         h1 {
+
             z-index: 9998 !important;
             // font-size: 86px;
             line-height: 30px;
@@ -31,7 +36,7 @@
     }
 
     svg {
-        position: fixed;
+        position: absolute;
         transform: skew(-60deg, 10deg);
         z-index: 0;
         // transform: skew(-60deg, 90deg);
