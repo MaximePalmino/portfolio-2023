@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import styles from '../cases/Cases.module.scss';
-import calceare from '../../assets/images/calceare.png'
+import CoolSimple from '../../assets/images/cool-simple.png'
+import Quarante from '../../assets/images/40-60.png'
+import Amoseeds from '../../assets/images/amoseeds.jpg'
+
 import usermind from '../../assets/images/usermind.png'
 import sud from '../../assets/images/telephones.png'
 import Link from 'next/link'
@@ -16,19 +19,19 @@ const Cases: React.FC<any> = () => {
 
     const projects = [
         {
-            name: 'Calceare',
+            name: '40/60 Studio',
             type: 'fullstack',
-            url: calceare.src,
+            url: Quarante.src,
 
         },
         {
-            name: 'Tinder Clone',
+            name: 'Cool&Simple',
             type: 'fullstack',
-            url: usermind.src,
+            url: CoolSimple.src,
 
         },
         {
-            name: 'SudAerien',
+            name: 'Gastronomia Aliments Fins',
             type: 'fullstack',
             url: sud.src,
 
@@ -42,7 +45,7 @@ const Cases: React.FC<any> = () => {
         {
             name: 'Amoseeds',
             type: 'Branding',
-            url: 'https://images.unsplash.com/photo-1669980536057-0276d4055e61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
+            url: Amoseeds.src
 
         },
     ]
@@ -70,7 +73,7 @@ const Cases: React.FC<any> = () => {
 
         <div className={styles.container}>
             <div className={styles.places}>
-                {isTrue ? <img src={test} /> : <h2>Project I loved to worked on </h2>}
+                {isTrue ? <img src={test} /> : <h2>5 Companies I worked with</h2>}
             </div>
             <div className={styles.container_places}>
                 {projects.map((project: Project, index: number) => (
@@ -87,3 +90,5 @@ const Cases: React.FC<any> = () => {
 }
 
 export default Cases
+
+

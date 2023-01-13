@@ -11,7 +11,7 @@ const Footer: React.FC<any> = () => {
                     <h1>Get in<br></br> touch</h1>
                 </div>
                 <div className={styles.places}>
-                    <h1>Lab</h1>
+                    <h1>♥️</h1>
                 </div>
                 <div className={styles.places}>
                     <h1>Dev.to</h1>

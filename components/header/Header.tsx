@@ -3,14 +3,29 @@ import { useRef } from 'react'
 import { Rainbow } from '../Rainbow.js'
 import { Canvas } from '@react-three/fiber'
 import { EffectComposer, Bloom } from '@react-three/postprocessing'
+import {
+    motion,
+    useScroll,
+    useSpring,
+    useTransform,
+    MotionValue
+} from "framer-motion";
 
+
+function useParallax(value: MotionValue<number>, distance: number) {
+    return useTransform(value, [0, 1], [-distance, distance]);
+}
 const Header: React.FC<any> = () => {
+
+    const ref = useRef(null);
+    const { scrollYProgress } = useScroll({ target: ref });
+    const y = useParallax(scrollYProgress, -100);
 
     return (
 
-        <div className={styles.container}>
-            <div className={styles.displacement}>
-                <div className={styles.name}>
+        <div className={styles.container} >
+            <div className={styles.displacement} ref={ref}>
+                <div className={styles.name} >
                     <p>Front-end web developer with typescript fullstack experience</p>
                     <h1>Maxime Palmino</h1>
                 </div>
@@ -30,21 +45,16 @@ const Header: React.FC<any> = () => {
             {/*        <textPath href="#MyPath">Quick brown fox jumps over the lazy dog.</textPath>*/}
             {/*    </text>*/}
             {/*</svg>*/}
-             <Canvas orthographic gl={{ antialias: false }} style={{ width: 700, height: 350, borderRadius: '0%', filter: 'blur(0px)', marginTop: '2em', position:'absolute' }}>
+            <motion.div style={{y,width: 700, height: 350, borderRadius: '0%', filter: 'blur(0px)', marginTop: '2em', position:'absolute' }}>
+             <Canvas orthographic gl={{ antialias: false }} style={{}}>
                         <color attach="background" args={['#000000']} />
                         <Scene />
                         <EffectComposer disableNormalPass>
                             <Bloom mipmapBlur levels={10} intensity={1.5} luminanceThreshold={2} luminanceSmoothing={1} />
                         </EffectComposer>
                     </Canvas>
-            {/*<Canvas orthographic gl={{ antialias: false }} style={{ width: 700, height: 350, borderRadius: '0%', filter: 'blur(0px)', marginTop: '2em', position:'absolute', transform: 'rotate(180deg)' }}>*/}
-            {/*    <Scene />*/}
-
-            {/*    <EffectComposer disableNormalPass>*/}
-            {/*        <Bloom mipmapBlur levels={10} intensity={1.5} luminanceThreshold={2} luminanceSmoothing={1} />*/}
-            {/*    </EffectComposer>*/}
-            {/*</Canvas>*/}
-        </div>
+            </motion.div>
+            </div>
     )
 }
 export default Header;

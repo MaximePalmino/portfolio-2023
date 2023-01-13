@@ -1,0 +1,28 @@
+.link {
+  text-decoration: none;
+
+.url {
+  width: 100vw;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  line-break: loose;
+  color: rgba(255,255,255, 1);
+  transition: .4s cubic-bezier(.215, .61, .355, 1);
+
+  &:hover{
+    color: #000000;
+    // background-color: #FA8BFF;
+    // background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    border-top: none;
+    background: #ffffff;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    height: 10vh;
+    box-shadow: #0d1117;
+
+  }
+}
+}

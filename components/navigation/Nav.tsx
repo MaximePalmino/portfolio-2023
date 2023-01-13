@@ -8,15 +8,18 @@ const Nav = () => {
     return (
         <div className={`${styles.container} ${scrollDirection === "down" ? `${styles.hide}` : "show"}`}>
             <div>
-                <p>👋 Hey</p>
+                <p>👋</p>
+
             </div>
             <div>
+
                 <p>Cases</p>
-                <p>Lab</p>
-                <p>Blog</p>
+                <p>About</p>
+                <p>Contact</p>
+
             </div>
             <div>
-                <p>About</p>
+                <p>Blog</p>
             </div>
         </div>
     )

@@ -5,6 +5,7 @@ import Cases from "../components/cases/Cases"
 import Places from "../components/about/Places"
 import Footer from "../components/footer/Footer"
 import About from "../components/about/About"
+import Projects from '../components/cases/Projects';
 
 const Home = () => {
     const {scroll} = useLocomotiveScroll()
@@ -16,8 +17,8 @@ const Home = () => {
                 <Header/>
                 <Tools/>
                 <Cases/>
+                <Projects />
                 <About/>
-                <Places/>
                 <Footer/>
             </div>
         </div>
