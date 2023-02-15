@@ -22,6 +22,7 @@
         width: 50%;
         height: 100%;
         border-right: .4px solid rgba(201, 209, 217, 0.2);
+        transition: .4s all ease-in-out;
 
         img {
             z-index: 1;
@@ -29,6 +30,8 @@
             height: 100%;
             object-fit: cover;
             transition: .4s all ease-in-out;
+
+
         }
 
     }
@@ -45,7 +48,7 @@
         align-items: center;
         align-content: center;
 
-        a {
+        div {
             text-decoration: none;
             color: #ffffff;
             height: 33.33333%;
@@ -63,9 +66,9 @@
 
 
             &:hover {
+                //fill: rgb(74, 0, 216);
 
                 background-image: linear-gradient(180deg, #092fb5 10%, #FF0000 100%);
-                cursor: pointer;
                 height: 40%;
                 transform: scale(1.03) rotate(2deg);
 
@@ -91,6 +94,7 @@
         .places {
             width: 100%;
             border-bottom: .4px solid #10100E;
+            position: relative;
 
         }
 

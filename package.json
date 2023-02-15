@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@react-three/drei": "^9.42.2",
     "@react-three/fiber": "^8.9.1",
     "@react-three/postprocessing": "^2.7.0",
@@ -21,12 +23,13 @@
     "drei": "^2.2.21",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.4",
-    "framer-motion": "^7.6.18",
+    "framer-motion": "^7.10.3",
     "locomotive-scroll": "^4.1.4",
     "next": "13.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-locomotive-scroll": "^0.2.2",
+    "react-scroll": "^1.8.9",
     "sass": "^1.56.1",
     "typescript": "4.9.3"
   }
