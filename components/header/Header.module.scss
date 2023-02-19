@@ -1,62 +1,61 @@
 .container {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 100px;
+  // background-image: linear-gradient(0deg, #FFFFFF 0%, #cdd7ff 100%);
+  background: #000000;
+  color: white;
+  border-radius: 40px 40px 15px 15px;
+
+
+  .name {
+
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    line-height: 100px;
-    // background-image: linear-gradient(0deg, #FFFFFF 0%, #cdd7ff 100%);
-    background: #000000;
-    color: white;
-    border-radius: 40px 40px 15px 15px;
 
-
-    .name {
-
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        p {
-            color: white;
-            z-index: 9998;
-            font-size: 1em;
-            font-family: Cabinet Grotesk;
-            letter-spacing: 1px;
-        }
-
-        h1 {
-
-            z-index: 9998 !important;
-            // font-size: 86px;
-            line-height: 30px;
-            font-weight: 900;
-            transition: .3s all ease-in-out;
-
-        }
+    p {
+      z-index: 9998;
+      font-size: 1em;
+      font-family: Cabinet Grotesk;
+      letter-spacing: 1px;
     }
 
-    svg {
-        position: absolute;
-        transform: skew(-60deg, 10deg);
-        z-index: 0;
-        // transform: skew(-60deg, 90deg);
-        /* Equal to skewX(10deg) */
+    h1 {
+      margin-top: 24px;
+      filter: glow(50px);
+      z-index: 9998 !important;
+      line-height: 30px;
+      font-weight: 900;
+      transition: .3s all ease-in-out;
 
     }
+  }
+
+  svg {
+    position: absolute;
+    transform: skew(-60deg, 10deg);
+    z-index: 0;
+    // transform: skew(-60deg, 90deg);
+    /* Equal to skewX(10deg) */
+
+  }
 }
 
 @media only screen and (max-width: 600px) {
 
-    .name {
-        h1 {
-            z-index: 9999 !important;
-            font-size: 3em;
-            line-height: auto;
-            font-weight: 900;
-            transition: .3s all ease-in-out;
-        }
+  .name {
+    h1 {
+      z-index: 9999 !important;
+      font-size: 3em;
+      line-height: auto;
+      font-weight: 900;
+      transition: .3s all ease-in-out;
     }
+  }
 }

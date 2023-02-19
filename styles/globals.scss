@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *,
 *:before,
 *:after {
@@ -5,7 +9,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+//@font-face {
+//  font-family: 'CultureBold';
+//  src: url('./Culture-Bold.otf');
+//
+//}
 body {
   overflow-x: hidden;
   overscroll-behavior-y: none;
@@ -29,8 +37,10 @@ body {
 
 h1 {
   font-size: 86px;
-  font-family: Cabinet Grotesk;
+  font-family: Culture;
+  font-weight: bold;
   line-height: 86.5%;
+  color: #efefef;
 
 }
 
@@ -39,12 +49,13 @@ h2 {
   font-size: 25px;
   font-weight: 400;
   letter-spacing: 0.04em;
-  z-index: 9999;
 }
 
 p {
+  color: #efefef;
   font-family: satoshi;
   font-size: 11px;
+
 }
 
 

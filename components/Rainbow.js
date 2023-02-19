@@ -46,7 +46,8 @@ const RainbowMaterial = shaderMaterial(
       float luma = 0.00350;      
       vec3 tint = vec3(4,3,0.10);      
       // float interf0 = 1.4;      
-      float interf0 = 9.9;   
+      // FREQUENCES
+      float interf0 = 2.0;   
       // float interf0 = 1.9;      
    
       float phase0 = 1.0 / 2.8;      
