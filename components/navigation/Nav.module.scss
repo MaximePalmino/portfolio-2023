@@ -37,13 +37,12 @@
 
     p {
       color: #efefef;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      margin: 10px;
-      width: 50px;
+      margin: 5px;
+      min-width: 50px;
       border-radius: 46px;
       text-align: center;
       // border: 1px dashed #10100E;
-      padding: .5em;
+      padding: 1em;
       -webkit-transition: ease-out 0.4s;
       -moz-transition: ease-out 0.4s;
       transition: ease-out 0.4s;

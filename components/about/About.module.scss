@@ -1,29 +1,32 @@
 .container {
-    padding: 5em;
-    width: 100vw;
-    height: 110vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    /* fallback for old browsers */
-    /* Chrome 10-25, Safari 5.1-6 */
-    // background: #1488CC;
-    // /* fallback for old browsers */
-    // background: -webkit-linear-gradient(to top, #2B32B2, #1488CC);
-    // /* Chrome 10-25, Safari 5.1-6 */
-    // background: linear-gradient(to top, #3d47f8, #ffffff);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 5em;
+  width: 100vw;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: linear-gradient(300deg, white, #6284ff, #ff0000);
+  animation: gradient-animation 15s ease infinite;
+  z-index: 10;
+  background-size: 180% 180%;
 
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
-
+  h1 {
     z-index: 10;
 
-    h1 {
-        z-index: 10;
+    text-shadow: 2px 2px rgb(250, 244, 244), 2px 2px rgb(255, 255, 255), 2px 2px rgb(244, 241, 241), 2px 2px black;
 
-        text-shadow: 2px 2px rgb(250, 244, 244), 2px 2px rgb(255, 255, 255), 2px 2px rgb(244, 241, 241), 2px 2px black;
+  }
+}
 
-    }
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

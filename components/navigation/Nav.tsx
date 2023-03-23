@@ -13,13 +13,13 @@ const Nav = () => {
             </div>
             <div>
 
-                <p>Cases</p>
+                <p>Work</p>
                 <p>About</p>
                 <p>Contact</p>
 
             </div>
             <div>
-                <p>Blog</p>
+                <p >Resume</p>
             </div>
         </div>
     )
