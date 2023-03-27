@@ -1,20 +1,46 @@
 .container {
   padding: 5em;
   width: 100vw;
-  height: 110vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   align-content: center;
   background: linear-gradient(300deg, white, #6284ff, #ff0000);
-  animation: gradient-animation 15s ease infinite;
+  animation: gradient-animation 10s ease infinite;
   z-index: 10;
   background-size: 180% 180%;
 
   h1 {
     z-index: 10;
+    text-align: center;
+    font-family: Dahlia;
+    line-height: 1.2em;
 
-    text-shadow: 2px 2px rgb(250, 244, 244), 2px 2px rgb(255, 255, 255), 2px 2px rgb(244, 241, 241), 2px 2px black;
+  }
+
+  p {
+    margin-top: 32px;
+    padding: 8px 16px;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: .4s cubic-bezier(.215, .61, .355, 1);
+
+    &:hover {
+      background-color: white;
+      color: #10100E;
+      cursor: pointer;
+
+    }
+  }
+
+  .canva {
+    position: absolute;
+    height: 50vh;
 
   }
 }
