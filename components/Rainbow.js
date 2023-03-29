@@ -117,3 +117,6 @@ export const Rainbow = forwardRef(({ startRadius = 0, endRadius = 0.5, emissiveI
         </mesh>
     )
 })
+
+Rainbow.displayName = "Rainbow";
+
