@@ -1,19 +1,19 @@
 import styles from '../tools/Tools.module.scss'
 
-const Tools: React.FC<any> = () => {
+interface Logo {
+    name: string;
+    path: string;
+    alt: string;
+    width: string;
+    height: string;
+    viewBox: string;
+}
 
-    const logos: any = [
-        //     {
-        //     name: "firebase",
-        //     path: "M3.89 15.672 6.255.461A.542.542 0 0 1 7.27.288l2.543 4.771zm16.794 3.692-2.25-14a.54.54 0 0 0-.919-.295L3.316 19.365l7.856 4.427a1.621 1.621 0 0 0 1.588 0zM14.3 7.147l-1.82-3.482a.542.542 0 0 0-.96 0L3.53 17.984z",
-        //     alt: 'firebase logo',
-        //     width: '24px',
-        //     height: '24px',
-        //     viewBox: '0 0 24 24'
-        // },
+const Tools: React.FC<any> = () => {
+    const logos: Logo[] = [
         {
             name: "NodeJs",
-            path:"M24,4,7,16V32L24,44,41,32V16ZM37,29.9,24,39.1,11,29.9V18.1L24,8.9l13,9.2Z",
+            path: "M24,4,7,16V32L24,44,41,32V16ZM37,29.9,24,39.1,11,29.9V18.1L24,8.9l13,9.2Z",
             alt: 'firebase logo',
             width: '32px',
             height: '32px',
@@ -56,30 +56,21 @@ const Tools: React.FC<any> = () => {
     ]
 
 
-    const logKey = (index: number) => {
-        console.log(index)
-    }
-
     return (
-        <div className={styles.container}>
-            {/* <div>
-                <h2>Tools I like to work with</h2>
-            </div> */}
-            <div className={styles.tools_wrapper}>
 
+        <div className={styles.container} id="work">
+            <div className={styles.tools_wrapper}>
                 {logos.map((logo: any, index: number) => (
-                    <div key={index} className={styles.map_svg} onMouseEnter={() => logKey(index)}>
-                        <svg className={styles.svg} width={logo.width} height={logo.height} viewBox={logo.viewBox} role="img" xmlns="http://www.w3.org/2000/svg">
+                    <div key={index} className={styles.map_svg}>
+                        <svg className={styles.svg} width={logo.width} height={logo.height} viewBox={logo.viewBox}
+                             role="img" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d={logo.path}></path>
                         </svg>
                         <h1>{logo?.name}</h1>
                     </div>
                 ))}
-
-
             </div>
-
-        </div >
+        </div>
     )
 
 

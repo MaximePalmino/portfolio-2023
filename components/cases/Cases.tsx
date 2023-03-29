@@ -62,7 +62,7 @@ const projects: Project[] = [
     {
         name: 'Waves',
         type: 'Front-end player app',
-        description:"I'm thrilled to share a project that I worked on - a dynamic web application that allows users to play music on a playlist of their choosing, using React.",
+        description: "I'm thrilled to share a project that I worked on - a dynamic web application that allows users to play music on a playlist of their choosing, using React.",
         warning: '',
         url: Waves.src,
     },
@@ -73,7 +73,6 @@ const Cases: React.FC = () => {
     const [clickSelectedProject, setClickSelectedProject] = useState<Project | null>(null);
     const [isModaleOpen, setIsModaleOpen] = useState<boolean>(false)
     const [pointerEvent, setPointerEvent] = useState<string>('initial')
-
 
     const handleProjectHover = (project: Project) => {
         setSelectedProject(project);
@@ -94,19 +93,9 @@ const Cases: React.FC = () => {
         }
     }
 
-    const nextProject = () => {
-
-    }
-    const item = {
-        hidden: {scale: 0.99, opacity: 1},
-        show: {scale: 1, opacity: 1},
-    };
-
-
     return (
         <>
             <AnimatePresence>
-
                 {clickSelectedProject && (
                     isModaleOpen && (
                         <motion.div className={styles.modale}
@@ -121,7 +110,7 @@ const Cases: React.FC = () => {
                 )}
             </AnimatePresence>
 
-            <div className={styles.container} style={{pointerEvents: pointerEvent}}>
+            <div className={styles.container} style={{pointerEvents: pointerEvent as any}}>
                 <div className={styles.places}>
                     {selectedProject ? (
                         <motion.img src={selectedProject.url}

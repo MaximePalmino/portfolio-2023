@@ -19,8 +19,13 @@
     align-items: center;
     align-content: center;
 
-    &:hover {
-      color: #10100E;
+
+    h3 {
+      padding:8px 16px;
+    }
+
+    &:hover > h3 {
+      color: yellow;
       cursor: pointer;
 
     }
