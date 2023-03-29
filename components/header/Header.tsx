@@ -42,6 +42,7 @@ const Scene = () => {
 
     return (
         <>
+             {/*@ts-ignore*/}
             <Rainbow ref={rainbow} startRadius={0} endRadius={5.5} fade={0} />
         </>
     );
