@@ -1,8 +1,8 @@
 import styles from './Header.module.scss';
-import { useRef } from 'react';
-import { Rainbow } from '../Rainbow.js';
-import { Canvas } from '@react-three/fiber';
-import { EffectComposer, Bloom } from '@react-three/postprocessing';
+import {useRef} from 'react';
+import {Rainbow} from '../Rainbow.js';
+import {Canvas} from '@react-three/fiber';
+import {EffectComposer, Bloom} from '@react-three/postprocessing';
 
 const Header: React.FC<any> = () => {
     return (
@@ -17,11 +17,11 @@ const Header: React.FC<any> = () => {
             <div className={styles.canvasWrapper}>
                 <Canvas
                     orthographic
-                    gl={{ antialias: false }}
+                    gl={{antialias: false}}
                     className={styles.canvas}
                 >
-                    <color attach="background" args={['#000000']} />
-                    <Scene />
+                    <color attach="background" args={['#000000']}/>
+                    <Scene/>
                     <EffectComposer disableNormalPass>
                         <Bloom
                             mipmapBlur
@@ -42,8 +42,7 @@ const Scene = () => {
 
     return (
         <>
-             {/*@ts-ignore*/}
-            <Rainbow ref={rainbow} startRadius={0} endRadius={5.5} fade={0} />
+            <Rainbow ref={rainbow}   />
         </>
     );
 };
