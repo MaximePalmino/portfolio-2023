@@ -38,11 +38,10 @@ const Header: React.FC<any> = () => {
 };
 
 const Scene = () => {
-    const rainbow = useRef<any>(null);
 
     return (
         <>
-            <Rainbow ref={rainbow}   />
+            <Rainbow/>
         </>
     );
 };
