@@ -133,7 +133,7 @@ const Cases: React.FC = () => {
                                 <p>{project.type}</p>
                                 <p>{project.warning}</p>
                             </div>
-                            <div className={styles.arrow}> ></div>
+                            <div className={styles.arrow}>&gt;</div>
                         </div>
 
                     ))}
