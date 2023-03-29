@@ -4,12 +4,9 @@ import Cases from '../components/cases/Cases'
 import Footer from '../components/footer/Footer'
 import About from '../components/about/About'
 import Projects from '../components/cases/Projects'
-import { useState } from 'react';
-import { animateScroll as scroll } from 'react-scroll';
-import { motion, useTransform, useScroll} from 'framer-motion';
+import { motion} from 'framer-motion';
 
 const Home = () => {
-    const { scrollY } = useScroll();
 
     return (
         <>
