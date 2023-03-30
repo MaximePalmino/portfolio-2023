@@ -59,13 +59,20 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .name {
-    h1 {
-      z-index: 9999 !important;
-      font-size: 3em;
-      line-height: auto;
-      font-weight: 900;
-      transition: 0.3s all ease-in-out;
+  .container {
+    height: 55vh;
+    .name {
+      h1 {
+        z-index: 9999 !important;
+        line-height: auto;
+        font-weight: 900;
+        transition: 0.3s all ease-in-out;
+      }
+    }
+    .canvasWrapper {
+      width: 90%;
+      height: 30vh
     }
   }
+
 }

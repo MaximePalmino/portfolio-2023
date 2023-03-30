@@ -46,7 +46,6 @@ h1 {
   font-weight: bold;
   line-height: 86.5%;
   color: #efefef;
-
 }
 
 h2 {
@@ -71,20 +70,10 @@ hr {
 }
 
 
-.bg {
-  background-image: url(../assets/noise/noise.png);
-  background-repeat: repeat;
-  position: fixed;
-  z-index: 50;
-  width: 400%;
-  height: 300%;
-  left: -100%;
-  top: -100%;
-  pointer-events: none;
-  will-change: transform;
-  animation: 10s steps(10) 0s infinite normal none running noise_grain__3Y1xm;
 
+@media only screen and (max-width: 600px) {
+
+ h1 {
+   font-size: 30px;
+ }
 }
-
-
-
