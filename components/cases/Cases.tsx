@@ -118,7 +118,7 @@ const Cases: React.FC = () => {
                                           animate={{opacity: 1, x: 0}}
                                           transition={{duration: .4}}
                                           exit={{opacity: 0, x: 15}}>
-                            5 Companies I Worked With </motion.h2>
+                            5 Projects I collaborated on</motion.h2>
                     )}
                 </div>
                 <div className={styles.container_places}>
