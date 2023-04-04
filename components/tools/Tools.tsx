@@ -72,8 +72,6 @@ const Tools: React.FC<any> = () => {
             </div>
         </div>
     )
-
-
 }
 
 export default Tools
