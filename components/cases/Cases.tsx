@@ -47,7 +47,7 @@ const projects: Project[] = [
         description: "Using cutting-edge technologies such as Nuxt and Flutter, we were able to create a powerful and user-friendly platform that meets the specific needs of syndicates. Our platform allows members to easily share information, stay informed about important updates, and collaborate more efficiently.\n" +
             "\n" +
             "As a developer on this project, I was involved in the design and implementation of key features, such as event scheduling, and document sharing. We worked closely with syndicate representatives to ensure that our platform met their unique requirements and delivered value to their members.",
-        warning: '⚠️ The name and UI have have been changed for security reasons | UI from Tomasz Mazurczak',
+        warning: '⚠️ The name and UI have been changed for security reasons | UI from Tomasz Mazurczak',
         url: Sudaerien.src,
     },
     {
