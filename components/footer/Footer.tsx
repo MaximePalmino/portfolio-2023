@@ -20,7 +20,7 @@ const Footer: React.FC<any> = () => {
                     <h3>{email}</h3>
                 </div>
                 <div className={styles.places}>
-                    <h1>📍Paris</h1>
+                    <h1>🇨🇦️ Mtl lover</h1>
 
                 </div>
             </div>
